@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+ul {
+  list-style: none;
+}
+
+.list__item:hover {
+  background: pink;
+}
+
+#form {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.wrap {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.chess__wrap {
+  grid-row: 1/2;
+  grid-column: 2/2;
+  background: yellow;
+}
+
+.chess {
+  width: 192px;
+  height: 192px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+.chess-white {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background: rgb(190, 183, 204);
+  border: solid 2px green;
+  vertical-align: middle;
+}
+
+.chess-black {
+  width: 20px;
+  height: 20px;
+  background: rgb(2, 2, 2);
+  border: solid 2px green;
+}
+.chess-active {
+  background: rgb(255, 0, 0);
+}
+
+.box {
+  width: 300px;
+  height: 140px;
+  background: rgb(75, 80, 145);
+  position: relative;
+  overflow: hidden;
+  margin-left: 30px;
+}
+.elm {
+  width: 50px;
+  height: 50px;
+  background: rgb(61, 177, 166);
+  position: absolute;
+}
+
+.bgEvent {
+  background: rgba(93, 95, 158, 0.5);
+  position: absolute;
+  transition: top 0.2s;
+}
+.active-target {
+  background: rgb(244, 247, 62);
+}
+
+.search__textfield {
+  border: solid 2px blue;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
